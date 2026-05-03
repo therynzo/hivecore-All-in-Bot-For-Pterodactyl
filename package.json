@@ -1,0 +1,39 @@
+{
+  "name": "hivecore-bot",
+  "version": "1.0.0",
+  "description": "Professional Discord bot integrated with Pterodactyl Panel API — node monitoring, account generation, server management, economy, shop, and admin tools.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "pterodactyl",
+    "minecraft",
+    "hosting",
+    "economy"
+  ],
+  "author": "therynzo",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "better-sqlite3": "^11.5.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "nanoid": "^3.3.7",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.14.0"
+  }
+}
